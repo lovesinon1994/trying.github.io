@@ -169,6 +169,11 @@ nav {
             background-color: #dcdcdc;
         }
     }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 .filt-icon {
     color: #1F1F1F;
@@ -383,15 +388,20 @@ main {
     
 }
 footer {
-    position: fixed;
-    left: 15px;
-    bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     p {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.3px;
     font-weight: 700;
     }
+}
+.filter-button {
+    display:flex;
+    width: 30%;
+    justify-content: space-between;
 }
 .singer-image {
     height: 150px;
@@ -512,12 +522,11 @@ footer {
     align-items: center;
     right: 0;
     bottom: 0;
-   
+   overflow: hidden;
     display: flex;
 }
 .content {
-    background: rgb(177,59,0);
-background: linear-gradient(180deg, rgba(177,59,0,1) 0%, rgba(32,32,32,1) 81%, rgba(18,18,18,1) 100%, rgba(0,0,0,1) 100%);
+    background-color: #2d2d2d;
     height: 456px;
     width: 800px;
     padding: 64px;
@@ -529,9 +538,25 @@ background: linear-gradient(180deg, rgba(177,59,0,1) 0%, rgba(32,32,32,1) 81%, r
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
+    overflow: hidden;
     img {
         border-radius: 8px;
     }
+}
+.modal-button-second {
+    background-color: #FF5500;
+    &:hover {
+        background-color: #FF5500;
+    }
+}
+.modal-button {
+    background-color: transparent;
+    border: 0.5px solid white;
+    color: white;
+    &:hover {
+        color: #121212;
+    }
+    font-weight: 900;
 }
 .modal-image {
     height: 300px;
@@ -581,4 +606,54 @@ background: linear-gradient(180deg, rgba(177,59,0,1) 0%, rgba(32,32,32,1) 81%, r
     letter-spacing: 0.3px;
     font-weight: 700;
     color: white;
+}
+.main-information {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: #848484 0.2px solid;
+    margin-bottom: 40px;
+}
+.information-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 15%;
+    
+}
+.information-link {
+    text-decoration: none;
+    color:#B3B3B3;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    font-size: 13px;
+    &:hover {
+        color: white;
+        text-decoration: underline;
+    }
+}
+.information-paragraph {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+.information-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10%;
+}
+.information-icon {
+    color: white;
+    font-size: 22px;
+}
+.musicly {
+    p {
+        color:#B3B3B3;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+    
+    font-size: 13px;
+    }
 }

@@ -192,6 +192,11 @@ nav {
   transform: scale(1.05);
   background-color: #dcdcdc;
 }
+.filters ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .filt-icon {
   color: #1F1F1F;
@@ -424,15 +429,21 @@ main {
 }
 
 footer {
-  position: fixed;
-  left: 15px;
-  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 footer p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.3px;
   font-weight: 700;
+}
+
+.filter-button {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
 }
 
 .singer-image {
@@ -568,12 +579,12 @@ footer p {
   align-items: center;
   right: 0;
   bottom: 0;
+  overflow: hidden;
   display: flex;
 }
 
 .content {
-  background: rgb(177, 59, 0);
-  background: linear-gradient(180deg, rgb(177, 59, 0) 0%, rgb(32, 32, 32) 81%, rgb(18, 18, 18) 100%, rgb(0, 0, 0) 100%);
+  background-color: #2d2d2d;
   height: 456px;
   width: 800px;
   padding: 64px;
@@ -585,9 +596,27 @@ footer p {
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
+  overflow: hidden;
 }
 .content img {
   border-radius: 8px;
+}
+
+.modal-button-second {
+  background-color: #FF5500;
+}
+.modal-button-second:hover {
+  background-color: #FF5500;
+}
+
+.modal-button {
+  background-color: transparent;
+  border: 0.5px solid white;
+  color: white;
+  font-weight: 900;
+}
+.modal-button:hover {
+  color: #121212;
 }
 
 .modal-image {
@@ -639,4 +668,57 @@ footer p {
   letter-spacing: 0.3px;
   font-weight: 700;
   color: white;
+}
+
+.main-information {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: #848484 0.2px solid;
+  margin-bottom: 40px;
+}
+
+.information-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 15%;
+}
+
+.information-link {
+  text-decoration: none;
+  color: #B3B3B3;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.information-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.information-paragraph {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+
+.information-flex {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10%;
+}
+
+.information-icon {
+  color: white;
+  font-size: 22px;
+}
+
+.musicly p {
+  color: #B3B3B3;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.7px;
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */
