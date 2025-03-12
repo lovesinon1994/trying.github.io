@@ -413,10 +413,10 @@ h5 {
 }
 
 .main-container {
-  width: 1072px;
+  max-width: 100%;
   padding: 14px 17px 14px 24px;
-  background: rgb(61, 61, 61);
-  background: linear-gradient(180deg, rgb(61, 61, 61) 0%, rgb(18, 18, 18) 75%, rgb(18, 18, 18) 100%, rgb(18, 18, 18) 100%);
+  background-color: #121212;
+  background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
   border-radius: 8px;
   height: 100%;
 }
@@ -447,13 +447,14 @@ footer p {
 }
 
 .singer-image {
-  height: 150px;
+  width: 100%;
 }
 
 .singer-card {
   width: 160px;
   padding: 4px;
   transition-duration: 0.3s;
+  flex-shrink: 0;
   border-radius: 5px;
 }
 .singer-card:hover .play {
@@ -505,11 +506,13 @@ footer p {
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  width: 100%;
 }
 
 .singer-images {
   margin-bottom: 4px;
   position: relative;
+  width: 100%;
 }
 
 .play {
@@ -542,6 +545,7 @@ footer p {
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
+  max-width: 100%;
 }
 
 .singer-info-name {
@@ -560,6 +564,7 @@ footer p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .single-images {
@@ -721,4 +726,32 @@ footer p {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.7px;
   font-size: 13px;
+}
+
+.bars {
+  display: none;
+}
+
+@media screen and (max-width: 1470px) {
+  .ads {
+    display: none;
+  }
+  .installings {
+    display: none;
+  }
+  .bars {
+    width: 10%;
+    display: block;
+  }
+  .panel-right {
+    display: inline-block;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 1354px) {
+  .singers {
+    justify-content: start;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
