@@ -260,7 +260,7 @@ nav {
 }
 
 .create-playlist {
-  width: 100%;
+  max-width: 100%;
   padding: 16px 20px;
   background-color: #1F1F1F;
   border-radius: 10px;
@@ -681,6 +681,7 @@ footer p {
   padding-bottom: 50px;
   border-bottom: #848484 0.2px solid;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .information-item {
@@ -748,10 +749,45 @@ footer p {
     width: 20px;
   }
 }
-@media screen and (max-width: 1354px) {
-  .singers {
-    justify-content: start;
-    -moz-column-gap: 60px;
-         column-gap: 60px;
+@media screen and ((max-width: 974px) and (min-width: 768px)) {
+  .filters {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 974px) {
+  .singer-card {
+    width: 47%;
+  }
+  .main-title {
+    font-size: 17px;
+  }
+  .filters {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 706px) {
+  .search {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .singer-card {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .information-item {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .information-item {
+    width: 30%;
   }
 }/*# sourceMappingURL=style.css.map */
